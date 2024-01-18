@@ -17,7 +17,7 @@ public class Launcher : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       GameObject missie =  Instantiate(missilePrefab, spawn.position, spawn.rotation);
+        GameObject missile =  Instantiate(missilePrefab, spawn.position, spawn.rotation);
 
     }
     // Update is called once per frame
