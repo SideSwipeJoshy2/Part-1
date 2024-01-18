@@ -29,8 +29,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //Debug Log("Player hit the wall");
-        //Destroy(gameObject);
+        Debug.Log("Player hit the wall");
+        Destroy(gameObject);
             
     }
 }
