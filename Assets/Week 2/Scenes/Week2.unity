@@ -171,9 +171,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3619339615061589106, guid: 082ff7ab43c6bb146a37f8a2c6f447a3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8470242158169889610, guid: 082ff7ab43c6bb146a37f8a2c6f447a3, type: 3}
       propertyPath: m_Name
       value: Missile
+      objectReference: {fileID: 0}
+    - target: {fileID: 8470242158169889610, guid: 082ff7ab43c6bb146a37f8a2c6f447a3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -468,7 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86cdf0942c5967941b2cad5be65cf1c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1546788524}
 --- !u!212 &1546788524
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -621,7 +629,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2051169372627089362, guid: 0296f5d29d5fdc046b0ae173f45470b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.08
+      value: -0.83
       objectReference: {fileID: 0}
     - target: {fileID: 2051169372627089362, guid: 0296f5d29d5fdc046b0ae173f45470b4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -801,7 +809,7 @@ Transform:
   m_GameObject: {fileID: 2070639364}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.43, y: 0, z: 0}
+  m_LocalPosition: {x: 2.54, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
