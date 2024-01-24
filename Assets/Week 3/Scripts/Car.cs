@@ -10,6 +10,7 @@ public class Car : MonoBehaviour
     public float forwardSpeed = 500;
         public float steeringSpeed = 100;
     Rigidbody2D rigidbody;
+    public float maxSpeed = 500;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,10 @@ public class Car : MonoBehaviour
     {
         rigidbody.AddTorque(steering * steeringSpeed * Time.deltaTime);
         Vector2 force = transform.up * accel* forwardSpeed * Time.deltaTime;
-        rigidbody.AddForce(force);
+        if (rigidbody.velocity.magnitude < maxSpeed)
+        {
+
+            rigidbody.AddForce(force);
+        }
     }
 }
