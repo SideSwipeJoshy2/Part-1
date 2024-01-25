@@ -27,6 +27,8 @@ public class Car : MonoBehaviour
 
     }
 
+
+
     public void FixedUpdate()
     {
         rigidbody.AddTorque(steering * steeringSpeed * Time.deltaTime);
