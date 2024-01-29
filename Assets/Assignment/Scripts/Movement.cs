@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour
     {
         float direction = Input.GetAxis("Horizontal");
         transform.Translate(direction * Time.deltaTime, 0, 0);
-
+       
+        
     }
 }
