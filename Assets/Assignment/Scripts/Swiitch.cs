@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Swiitch : MonoBehaviour
 {
-    public GameObject Door;
+    public GameObject Hider;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,13 +13,14 @@ public class Swiitch : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Door.activeInHierarchy == true)
+        if (Hider.activeInHierarchy == true)//if colided with turns the visibility of the ball off, and vice verse
         {
-            Door.SetActive(false);
+            Hider.SetActive(false);
+
         }
         else
         {
-            Door.SetActive(true);
+            Hider.SetActive(true);
         }
     }
 

@@ -23,7 +23,7 @@ public class Car : MonoBehaviour
     {
         accel = Input.GetAxis("Vertical");
         steering = Input.GetAxis("Horizontal");
-
+        transform.Translate(steering * Time.deltaTime, 0, 0);
 
     }
 
