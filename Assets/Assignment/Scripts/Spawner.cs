@@ -9,6 +9,7 @@ public class Spawner : MonoBehaviour
     public Rigidbody rigidBody;
     public Transform spawn;
     public GameObject ballPrefab;
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,8 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(Input.GetKeyUp(KeyCode.Space)) {
+            Instantiate(ballPrefab, spawn.position,spawn.rotation);
+        }
     }
 }

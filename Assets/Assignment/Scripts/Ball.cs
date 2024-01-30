@@ -17,7 +17,6 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 force = transform.position * fallForce * Time.deltaTime;
-        rigidbody.AddForce(force);
+        rigidbody.AddTorque(fallForce);
     }
 }
