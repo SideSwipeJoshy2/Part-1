@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 86769647}
   - component: {fileID: 86769648}
   m_Layer: 0
-  m_Name: Block
+  m_Name: Blocker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -583,7 +583,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 0}
-  force: 0
   speed: 25
 --- !u!1 &1221575964
 GameObject:

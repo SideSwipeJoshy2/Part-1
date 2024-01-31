@@ -18,14 +18,14 @@ public class Spawner : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject Ball = Instantiate(ballPrefab, spawn.position, spawn.rotation);
+        GameObject Ball = Instantiate(ballPrefab, spawn.position, spawn.rotation); //creates balls at the spawnpoint
 
     }
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyUp(KeyCode.Space)) {
-            Instantiate(ballPrefab, spawn.position,spawn.rotation);
-        }
+            Instantiate(ballPrefab, spawn.position,spawn.rotation); //if space is pressed it spawns balls at the spawnpoint
+                                                                    }
     }
 }

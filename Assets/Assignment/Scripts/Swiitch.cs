@@ -13,8 +13,8 @@ public class Swiitch : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Hider.activeInHierarchy == true)//if colided with turns the visibility of the ball off, and vice verse
-        {
+        if (Hider.activeInHierarchy == true)//if colided with turns the blocker off and on if recolided with
+             {
             Hider.SetActive(false);
 
         }
